@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!--logo-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+        <!--end of logo-->    
     <title>Gallery</title>
 
     <style>
@@ -54,9 +59,9 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-color: whitesmoke;">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">MAST ka trip</a>
+            <a class="navbar-brand" href="#"><span style="font-family: 'Yellowtail', cursive; color: purple; font-weight: bold;">MAST ka trip</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -65,22 +70,22 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">destinations</a>
+                        <a class="nav-link" href="index.html">destinations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">hotels</a>
+                        <a class="nav-link" href="index.html">hotels</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">gallery</a>
+                        <a class="nav-link active" href="gallery.html">gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contactUs.html">contact us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">about us</a>
+                        <a class="nav-link" href="aboutus.html">about us</a>
                     </li>
                 </ul>
 
@@ -88,80 +93,115 @@
         </nav>
 
         <!--END OF NAVIGATION SECTION-->
+        <!--jumbotron-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron jumbotron-fluid"
+                style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(187, 53, 53, 0.3) 100%), url(https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)">
+    
+                    <div class="container">
+    
+                        <h1 class="display-3 text-black text-center" style="padding: 75px 50px; font-family: Verdana;">Image Gallery</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of jumbotron-->
 
-        <h1 id="img_gallery"> Image Gallery</h1>
+        <h1 class="text-center h1" style="padding: 32px 16px 16px 16px;">Search Your Favourite Category</h1>
+        <form class="form-inline justify-content-center">
+            <input class="form-control mr-sm-2" type="search" placeholder=" Type city/area/place"
+                aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+
+        <div class="row py-3">
+            <div class="col-lg-2 col-6 text-center">
+                <button type="button" class="btn btn-light">Art</button>
+            </div>
+            <div class="col-lg-2 col-6 text-center">
+                <button type="button" class="btn btn-light">Architecture</button>
+            </div>
+            <div class="col-lg-2 col-6 text-center">
+                <button type="button" class="btn btn-light">Scenic</button>
+            </div>
+            <div class="col-lg-2 col-6 text-center">
+                <button type="button" class="btn btn-light">Temples</button>
+            </div>
+            <div class="col-lg-2 col-6 text-center">
+                <button type="button" class="btn btn-light">Monuments</button>
+            </div>
+            <div class="col-lg-2 col-6 text-center">
+                <button type="button" class="btn btn-light">Culture</button>
+            </div>
+        </div>
+
 
         <div class="card-columns">
 
             <div class="card col-lg col-md-3  col-sm-12 col-xs-12">
                 <img class="card-img" src="https://wallpapercave.com/wp/wp5637343.jpg" alt="AJMER">
-                <div class="center">AJMER</div>
             </div>
 
             <div class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
                 <img class="card-img" src="https://www.holidify.com/images/bgImages/TELANGANA.jpg" alt="TELANGANA">
-                <div class="center">TELENGANA</div>
             </div>
 
             <div class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
                 <img class="card-img"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Hyderabad_Town_Hall.jpg/220px-Hyderabad_Town_Hall.jpg"
                     alt="Hyderabad_Town_Hall">
-                <div class="center">HYDERABAD</div>
             </div>
 
             <div class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
                 <img class="card-img"
                     src="https://upload.wikimedia.org/wikipedia/commons/0/09/Mumbai_Aug_2018_%2843397784544%29.jpg"
                     alt="Mumbai">
-                <div class="center">MUMBAI</div>
             </div>
 
             <div class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
                 <img class="card-img"
                     src="https://www.gujarattourism.com/content/dam/gujrattourism/images/home_page/SOU.jpg"
                     alt="Gujarat">
-                <div class="center">GUJARAT</div>
             </div>
 
             <div class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
                 <img class="card-img" src="https://www.transindiatravels.com/wp-content/uploads/mysore-palace2.jpg"
                     alt="Karnataka">
-                <div class="center">KARNATAKA</div>
             </div>
 
             <div class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
                 <img class="card-img" src="https://wallpapercave.com/wp/wp5637343.jpg" alt="AJMER">
-                <div class="center">AJMER</div>
             </div>
             <div class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
                 <img class="card-img" src="https://www.holidify.com/images/bgImages/TELANGANA.jpg" alt="TELANGANA">
-                <div class="center">TELENGANA</div>
             </div>
 
             <div class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
                 <img class="card-img"
                     src="https://upload.wikimedia.org/wikipedia/commons/0/09/Mumbai_Aug_2018_%2843397784544%29.jpg"
                     alt="Mumbai">
-                <div class="center">MUMBAI</div>
             </div>
             <div class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
                 <img class="card-img"
                     src="https://www.gujarattourism.com/content/dam/gujrattourism/images/home_page/SOU.jpg"
                     alt="Gujarat">
-                <div class="center">GUJARAT</div>
             </div>
             <div class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
                 <img class="card-img" src="https://www.transindiatravels.com/wp-content/uploads/mysore-palace2.jpg"
                     alt="Karnataka">
-                <div class="center">KARNATAKA</div>
             </div>
 
 
         </div>
     </div>
+    <footer>
+        <div class="container-fluid" style="background-color: #373438; padding:2%">
 
-
+            <p style="color: whitesmoke;">MAST ka trip Team</p>
+            <p style="color: whitesmoke;">Reach Us at : <a href="mailto:mast_ka_trip@example.com">mast_ka_trip@example.com</a></p>
+        </div>
+    </footer>
 </body>
 
 </html>
