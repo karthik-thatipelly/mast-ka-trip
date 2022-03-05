@@ -18,6 +18,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <!--end of logo-->
+    <!--Style--> 
+    <style>
+            
+        #galleryImg1:hover {
+            transform: scale(1.1);
+        }
+        
+        #galleryImg2:hover {
+            transform: scale(1.1);
+        }
+        
+        #galleryImg3:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
 
     <title>mast ka trip</title>
 </head>
@@ -471,7 +487,7 @@
                 <h2 class="text-center h2" style="padding: 32px 16px 16px 16px;">Our Recommendations</h2>
                 <div class="row" style="padding: 16px 72px;">
                     <div class="card-deck">
-                        <div class="card" id="hotel1">
+                        <div class="card">
                             <img class="card-img-top"
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjhoy7hTfKUKOcL8UkiMP-T4FrYn4KZoT-mQ&usqp=CAU"
                                 alt="software engineering">
@@ -485,7 +501,7 @@
 
                             </div>
                         </div>
-                        <div class="card" id="hotel2">
+                        <div class="card">
                             <img class="card-img-top"
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG5ALdoeW3z0xqcSkiExxQu3KB2TOVNrCmJA&usqp=CAU"
                                 alt="Computer art">
@@ -499,7 +515,7 @@
 
                             </div>
                         </div>
-                        <div class="card" id="hotel3">
+                        <div class="card">
                             <img class="card-img-top"
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRmw4IrYEoE-YkqE_6IFe3XVfgzt4-lMPNXw&usqp=CAU"
                                 alt="Design">
@@ -517,7 +533,7 @@
                 </div>
                 <div class="row" style="padding: 16px 72px;">
                     <div class="card-deck">
-                        <div class="card" id="hotel4">
+                        <div class="card">
                             <img class="card-img-top"
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0b4gtEhN5ArL3E3G3WgwFSwfotN59uygsuw&usqp=CAU"
                                 alt="Data">
@@ -530,7 +546,7 @@
 
                             </div>
                         </div>
-                        <div class="card" id="hotel5">
+                        <div class="card">
                             <div class="card-body" style="background-color: purple;">
                                 <p class="card-text text-center"
                                     style="color: whitesmoke; font-style: italic; padding: 15% 0; font-size: 20px;">
@@ -543,7 +559,7 @@
 
                             </div>
                         </div>
-                        <div class="card" id="hotel6">
+                        <div class="card">
                             <img class="card-img-top"
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXLv6uM_CUpDn6rtlvmS6EaO1ohTodLsrquQ&usqp=CAU"
                                 alt="Marketing">
@@ -571,17 +587,17 @@
 
         </div>
         <!--gallery-->
-        <h1 class="Gallery d-none d-lg-block" style="text-align: center;padding-top: 32px; font-family: verdana;">Gallery</h1>
+        <h1 class=" d-none d-lg-block" style="text-align: center;padding-top: 32px; font-family: verdana;">Gallery</h1>
         <div class="row py-5 d-none d-lg-flex">
-            <div class="col">
-                <div class="card" >
+            <div id="galleryImg1" class="col">
+                <div class="card"> 
                     <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdaAye-LmhwC0T-H55DlUZj7sUk584cQbyFg&usqp=CAU" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text text-center" style="font-family: verdana; font-size: 18px;">Temples</p>
                       </div>
                   </div>
             </div>
-            <div class="col">
+            <div id="galleryImg2" class="col">
                 <div class="card">
                     <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxD8rxgQLp6DhJm54DWaHhPROYumL6PIR82g&usqp=CAU" alt="Card image cap">
                     <div class="card-body">
@@ -589,7 +605,7 @@
                       </div>
                   </div>
             </div>
-            <div class="col">
+            <div id="galleryImg3" class="col">
                 <div class="card">
                     <img class="card-img-top" src="https://images.pexels.com/photos/3155654/pexels-photo-3155654.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Card image cap">
                     <div class="card-body">
@@ -657,7 +673,7 @@
 
 
 
-    <script src="hotels.js"></script>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
