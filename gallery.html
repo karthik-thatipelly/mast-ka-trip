@@ -15,10 +15,6 @@
     <title>Gallery</title>
 
     <style>
-
-        .gallery img:hover {
-            transform: scale(1.075);
-        }
     
         .center {
             position: absolute;
@@ -31,6 +27,16 @@
             text-shadow: 2px 2px 4px #f7f7f7;
         }
 
+        #img_gallery {
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            font-family: sans-serif;
+            font-size: 50px;
+            font-style: italic;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px rgb(2, 2, 46);
+        }
+
         .card-columns {
             margin-top: 20px;
             border: 0;
@@ -38,10 +44,11 @@
         }
 
         .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             width: auto;
             height: auto;
             border: 2px;
-            padding: 5px;
+            padding: 0;
             
         }
 
@@ -130,58 +137,61 @@
         </div>
 
 
-        <div class="gallery card-columns">
+        <div class="card-columns">
 
-            <div id="img1" class="card col-lg col-md-3  col-sm-12 col-xs-12">
+            <div class="card col-lg col-md-3  col-sm-12 col-xs-12">
                 <img class="card-img" src="https://wallpapercave.com/wp/wp5637343.jpg" alt="AJMER">
             </div>
 
-            <div id="img2" class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
+            <div class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
                 <img class="card-img" src="https://www.holidify.com/images/bgImages/TELANGANA.jpg" alt="TELANGANA">
             </div>
 
-            <div id="img3" class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
-                <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Hyderabad_Town_Hall.jpg/220px-Hyderabad_Town_Hall.jpg"
+            <div class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
+                <img class="card-img"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Hyderabad_Town_Hall.jpg/220px-Hyderabad_Town_Hall.jpg"
                     alt="Hyderabad_Town_Hall">
             </div>
 
-            <div id="img4" class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
-                <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/0/09/Mumbai_Aug_2018_%2843397784544%29.jpg"
+            <div class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
+                <img class="card-img"
+                    src="https://upload.wikimedia.org/wikipedia/commons/0/09/Mumbai_Aug_2018_%2843397784544%29.jpg"
                     alt="Mumbai">
             </div>
 
-            <div id="img5" class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
-                <img class="card-img" src="https://www.gujarattourism.com/content/dam/gujrattourism/images/home_page/SOU.jpg"
+            <div class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
+                <img class="card-img"
+                    src="https://www.gujarattourism.com/content/dam/gujrattourism/images/home_page/SOU.jpg"
                     alt="Gujarat">
             </div>
 
-            <div id="img6" class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
+            <div class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
                 <img class="card-img" src="https://www.transindiatravels.com/wp-content/uploads/mysore-palace2.jpg"
                     alt="Karnataka">
             </div>
 
-            <div id="img7" class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
+            <div class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
                 <img class="card-img" src="https://wallpapercave.com/wp/wp5637343.jpg" alt="AJMER">
             </div>
-
-            <div id="img8" class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
+            <div class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
                 <img class="card-img" src="https://www.holidify.com/images/bgImages/TELANGANA.jpg" alt="TELANGANA">
             </div>
 
-            <div id="img9" class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
-                <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/0/09/Mumbai_Aug_2018_%2843397784544%29.jpg"
+            <div class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
+                <img class="card-img"
+                    src="https://upload.wikimedia.org/wikipedia/commons/0/09/Mumbai_Aug_2018_%2843397784544%29.jpg"
                     alt="Mumbai">
             </div>
-
-            <div id="img10" class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
-                <img class="card-img" src="https://www.gujarattourism.com/content/dam/gujrattourism/images/home_page/SOU.jpg"
+            <div class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
+                <img class="card-img"
+                    src="https://www.gujarattourism.com/content/dam/gujrattourism/images/home_page/SOU.jpg"
                     alt="Gujarat">
             </div>
-
-            <div id="img11" class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
+            <div class="card col-lg 3 col-md-3  col-sm-12 col-xs-12">
                 <img class="card-img" src="https://www.transindiatravels.com/wp-content/uploads/mysore-palace2.jpg"
                     alt="Karnataka">
             </div>
+
 
         </div>
     </div>
@@ -194,7 +204,6 @@
             <p style="color: whitesmoke;">Reach Us at : <a href="mailto:mast_ka_trip@example.com">mast_ka_trip@example.com</a></p>
         </div>
     </footer>
-    <script type="text/javascript" src="Gallery.js"></script>
 </body>
 
 </html>
